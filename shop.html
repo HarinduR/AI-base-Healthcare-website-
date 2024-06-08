@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="nav">
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="images/logo.png" alt="logo-img">
+                    </a>
+                </div>
+                <div class="links">
+                    <a class="active" href="home.html">Home</a>
+                    <a class="active" href="gallery.html">Gallery</a>
+                    <a class="active" href="shop.html" id="homec">Shop</a>
+                    <a class="active" href="quizpage.html">Q&A</a>
+                    <a class="active" href="aboutus.html">About us</a>
+                    <a class="active" href="feedback.html">Feedback</a>
+                    <a class="active" href="Listing Page.html">Review</a>
+                </div>
+                <div class="navright">
+                    <div class="cart"> 
+                        <a href="shop.html" alt="gallery">
+                            <img src="images/cart.png" alt="cart">
+                        </a>  
+                    </div>
+                    <div class="signup-login">     
+                        <a href="login.html">LOG IN</a>
+                        <a class="getstart" href="signup.html">GET STARTED</a>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+    </header> 
+
+    <div class="landing">
+        <div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Welcome to </h1>
+            <h2>MyHealth Pharmacy Store</h2>
+            <h3 id="heading2">At our Pharmacy store,
+                 we offer a wide range of healthcare products and friendly service.<br>
+                 Visit us for all your health needs!
+            </h3>     
+            <div class="btn">
+                <a href="container  ">See More</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-fluid" id="maincontainer">
+            <div class="card-section">
+                <div class="col-md-4" id="1">
+                    <img src="images2/shopitem (1).png">
+                    <div id="pro-info">
+                        <p class="product-name">Oparation Bed</p><p class="product-price">Rs 100000</p>
+                        <button class="btn btn-secondary" id="btn1">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images2/shopitem (2).png">
+                    <div id="pro-info">
+                        <p class="product-name">Blood Pressure Monitors</p><p class="product-price">Rs 50000</p>
+                        <button class="btn btn-secondary" id="btn2">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images2/shopitem (3).png">
+                    <div id="pro-info">
+                        <p class="product-name">stethoscope</p><p class="product-price">Rs 100000</p>
+                        <button class="btn btn-secondary" id="btn3">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images2/shopitem (4).png">
+                    <div id="pro-info">
+                        <p class="product-name">Surgical instrument</p><p class="product-price">Rs 8000</p>
+                        <button class="btn btn-secondary" id="btn4">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images2/shopitem (5).png">
+                    <div id="pro-info">
+                        <p class="product-name">Syringe Medicine Injection</p><p class="product-price">Rs 1000</p>
+                        <button class="btn btn-secondary" id="btn5">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images2/shopitem (6).png">
+                    <div id="pro-info">
+                        <p class="product-name">Infant Medicine</p><p class="product-price">Rs 550000</p>
+                        <button class="btn btn-secondary" id="btn6">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images2/shopitem (7).png">
+                    <div id="pro-info">
+                        <p class="product-name">Oxygen mask</p><p class="product-price">Rs 4500</p>
+                        <button class="btn btn-secondary" id="btn1">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images2/shopitem (8).png">
+                    <div id="pro-info">
+                        <p class="product-name">Defibrillator Medicine</p><p class="product-price">Rs 400000</p>
+                        <button class="btn btn-secondary" id="btn2">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images2/shopitem (9).png">
+                    <div id="pro-info">
+                        <p class="product-name">Hospital bed</p><p class="product-price">Rs 73000</p>
+                        <button class="btn btn-secondary" id="btn3">Buy Now</button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <div class="head">
+                <p>My Cart</p>
+                <button id="closeCart"><i class="fa fa-trash-o"></i></button>
+            </div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <div class="total-part">
+                    <h3>Total:</h3>
+                    <h2 id="total">RS 00.00</h2><br>
+                </div>
+                <div class="submitclearbutton">
+                    <button id="clearCart">Clear Cart</button>
+                    <button id="continueShopping">Purchase</button>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p id="orderSummary"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- footer -->
+
+   <footer>
+    <div class="background-image"></div>
+    <div id="background-image"></div>
+    <div class="footer">
+        <div class="part1">
+            <div class="logo">
+                <a href="home.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="terms">
+                <p>No 10,<br>Temple road,Bambalapitiya,<br>Colombo 4</p>
+                <p>071 6395951</p>
+            </div>
+        </div>
+        <div class="part1">
+            <h2>Solutions</h2>
+            <a href="https://www.google.com">AI bot</a>
+            <a href="shop.html">Medical equipments</a>
+            <a href="home.html">Advising</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+        <div class="part1">
+            <h2>Pages</h2>
+            <a href="#">Home</a>
+            <a href="#">Your Doctor</a>
+            <a href="#">Pharmacy</a>
+            <a href="#">About us</a>              
+        </div>
+        <div class="part1">
+            <h2>Socials</h2>
+            <a href="https://www.facebook.com/harindu.raveen" class="fa fa-facebook"> Facebook</a>
+            <a href="#" class="fa fa-twitter"> Twitter</a>
+            <a href="https://www.linkedin.com/in/harindu-raveen-44118125a/" class="fa fa-linkedin"> Linkedin</a>
+            <a href="https://www.instagram.com/_harindu_r_/" class="fa fa-instagram"> Instagram</a>
+        </div>
+    </div>
+  
+      
+    <div class="part2">
+        <p>This page is created by <b><a href="editorsS3.html">@Dharani Gamage</a></b></p>
+    </div>
+</footer>    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="./javascript/shop.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

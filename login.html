@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="nav">
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="images/logo.png" alt="logo-img">
+                    </a>
+                </div>
+                <div class="links">
+                    <a class="active" href="home.html" id="homec">Home</a>
+                    <a class="active" href="gallery.html">Gallery</a>
+                    <a class="active" href="shop.html">Shop</a>
+                    <a class="active" href="quizpage.html">Q&A</a>
+                    <a class="active" href="aboutus.html">About us</a>
+                    <a class="active" href="feedback.html">Feedback</a>
+                    <a class="active" href="Listing Page.html">Review</a>
+                </div>
+                <div class="navright">
+                    <div class="cart"> 
+                        <a href="gallery.html" alt="gallery">
+                            <img src="images/cart.png" alt="cart">
+                        </a>  
+                    </div>
+                    <div class="signup-login">     
+                        <a href="#">LOG IN</a>
+                        <a class="getstart" href="signup.html">GET STARTED</a>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+    </header>
+
+    <div class="formbox">
+        <div class="inner-formbox">
+            <div class="image-section">
+                <img src="images/icon2.png" alt="signup">
+            </div>
+
+            <div class="form-section" id="form-section-1">
+                <form id="myForm" action="home.html" method="post">
+                    <h2 class="heading2">Log-In for MyHealth</h2>
+                    <div class="tab">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+
+                        <input type="checkbox" name="login"><p>Keep My LogIn.<h4><a href="signup.html">Forgot password ?</a></h4></p>
+                        <a href="home.html">
+                            <button type="button" id="submitBtn" class="btn">Log-in</button>
+                        </a>
+                        <hr>
+                        <p id="p2">Don't have an Account?<a href="signup.html"> Sign Up</a></p>
+
+                        <div class="social">
+                            <a href="https://www.facebook.com/harindu.raveen" target="_blank" class="fa fa-facebook"></a>
+                            <a href="https://www.linkedin.com/in/harindu-raveen-44118125a/" target="_blank" class="fa fa-linkedin"></a>
+                            <a href="https://www.instagram.com/_harindu_r_/" target="_blank" class="fa fa-instagram"></a>
+                            <a href="#" target="_blank" class="fa fa-twitter"></a>
+                        </div>
+                    </div>    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="background-image"></div>
+        <div id="background-image"></div>
+        <div class="footer">
+            <div class="part1">
+                <div class="logo">
+                    <a href="home.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="terms">
+                    <p>No 10,<br>Temple road,Bambalapitiya,<br>Colombo 4</p>
+                    <p>071 6395951</p>
+                </div>
+            </div>
+            <div class="part1">
+                <h2>Solutions</h2>
+                <a href="https://www.google.com">AI bot</a>
+                <a href="#">Medical equipments</a>
+                <a href="#">Advising</a>
+                <a href="#">Feedback</a>
+            </div>
+            <div class="part1">
+                <h2>Pages</h2>
+                <a href="#">Home</a>
+                <a href="#">Your Doctor</a>
+                <a href="#">Pharmacy</a>
+                <a href="#">About us</a>              
+            </div>
+            <div class="part1">
+                <h2>Socials</h2>
+                <a href="https://www.facebook.com/harindu.raveen" class="fa fa-facebook"> Facebook</a>
+                <a href="#" class="fa fa-twitter"> Twitter</a>
+                <a href="https://www.linkedin.com/in/harindu-raveen-44118125a/" class="fa fa-linkedin"> Linkedin</a>
+                <a href="https://www.instagram.com/_harindu_r_/" class="fa fa-instagram"> Instagram</a>
+            </div>
+        </div>
+        <div class="part2">
+            <p>This page is created by <b><a href="editorsS1.css">@Harindu Raveen</a></b></p>
+        </div>
+    </footer>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="login.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

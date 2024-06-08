@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Signup</title>
+        <link rel="stylesheet" href="css/signup.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="./javascript/signup.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="nav">
+                    <div class="logo">
+                        <a href="home.html">
+                            <img src="images/logo.png" alt="logo-img">
+                        </a>
+                    </div>
+                    <div class="links">
+                        <a class="active" href="home.html" id="homec">Home</a>
+                        <a class="active" href="gallery.html">Gallery</a>
+                        <a class="active" href="shop.html">Shop</a>
+                        <a class="active" href="quizpage.html">Q&A</a>
+                        <a class="active" href="aboutus.html">About us</a>
+                        <a class="active" href="feedback.html">Feedback</a>
+                        <a class="active" href="Listing Page.html">Review</a>
+                    </div>
+                    <div class="navright">
+                        <div class="cart"> 
+                            <a href="gallery.html" alt="gallery">
+                                <img src="images/cart.png" alt="cart">
+                            </a>  
+                        </div>
+                        <div class="signup-login">     
+                            <a href="#">LOG IN</a>
+                            <a class="getstart" href="signup.html">GET STARTED</a>
+                        </div>
+                    </div>    
+                </div>
+            </div>    
+        </header>   
+
+
+        <div class="formbox">
+            <div class="inner-formbox">
+                <div class="image-section">
+                    <img src="images/icon3.png" alt="signup">
+                </div>
+
+                <div class="form-section" id="form-section-1">
+                    <form id="myForm" action="home.html" method="post">
+                        <h2 class="heading2">Sign Up for MyHealth</h2>
+                        <!-- First tab -->
+                        <div class="tab">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                    
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                    
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age">
+                    
+                            <label for="contact">Contact No:</label>
+                            <input type="tel" id="contact" name="contact">
+                    
+                            <label>Gender:</label>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <span class="gender-inline">Male</span>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <span class="gender-inline">Female</span>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <span class="gender-inline">Other</span><br><br>
+                                            
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password">
+                    
+                            <p class="loginlink"><a href="login.html">Log-in</a> for MyHealth.</p>
+                            
+                            <button type="reset" id="reset" class="btn">Reset</button>
+                            <button type="button" id="nextBtn" onclick="validateFirstStep()" class="btn">Next</button>
+                        </div>
+                    
+                        <!-- Second tab -->
+                        <div class="tab" style="display: none;">
+                            <label for="educational_preference">Educational Preference:</label>
+                            <select id="educational_preference" name="educational_preference">
+                                <option value="">Select Preference</option>
+                                <option value="in-person">Under ordinary level</option>
+                                <option value="online">Ordinary level</option>
+                                <option value="hybrid">Advance level</option>
+                                <option value="hands-on">Undergraduate</option>
+                                <option value="lecture-based">Postgraduate</option>
+                                <option value="interdisciplinary">Other</option>
+                            </select>
+                    
+                            <label for="user_preference1">Job title:</label><br>
+                            <select id="user_preference1" name="user_preference1">
+                                <option value="">Select Preference</option>
+                                <option value="123">Government</option>
+                                <option value="456">Privet</option>
+                                <option value="A789">Semi-Government</option>
+                                <option value="b565">A Broad</option>
+                                <option value="855">Non-Job</option>
+                                <option value="Other">Other</option>
+                            </select>
+                    
+                            <label for="user_preference2">Art and Creativity:</label><br>
+                            <select id="user_preference2" name="user_preference2">
+                                <option value="">Select Preference</option>
+                                <option value="123">painting</option>
+                                <option value="456">photography</option>
+                                <option value="A789">crafting</option>
+                                <option value="855">exhibitions</option>
+                                <option value="Other">Other</option>
+                            </select>
+                    
+                            <!-- Previous button for the second slide -->
+                            <button type="button" id="prevBtn" onclick="prevStep()" class="btn">Previous</button>
+                    
+                            <!-- Submit button for the second slide -->
+                            <button type="button" id="submitBtn" onclick="submitForm()" class="btn">Submit</button>
+                        </div>
+                    
+                        <!-- Circles which indicate the steps of the form -->
+                        <div style="text-align:center;margin-top:40px;">
+                            <span class="step"></span>
+                            <span class="step"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="footer">
+                <div class="part1">
+                    <div class="logo">
+                        <a href="home.html"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="terms">
+                        <p>No 10,<br>Temple road,Bambalapitiya,<br>Colombo 4</p>
+                        <p>071 6395951</p>
+                    </div>
+                </div>
+                <div class="part1">
+                    <h2>Solutions</h2>
+                    <a href="https://www.google.com">AI bot</a>
+                    <a href="#">Medical equipments</a>
+                    <a href="#">Advising</a>
+                    <a href="#">Feedback</a>
+                </div>
+                <div class="part1">
+                    <h2>Pages</h2>
+                    <a href="#">Home</a>
+                    <a href="#">Your Doctor</a>
+                    <a href="#">Pharmacy</a>
+                    <a href="#">About us</a>              
+                </div>
+                <div class="part1">
+                    <h2>Socials</h2>
+                    <a href="https://www.facebook.com/harindu.raveen" class="fa fa-facebook"> Facebook</a>
+                    <a href="#" class="fa fa-twitter"> Twitter</a>
+                    <a href="https://www.linkedin.com/in/harindu-raveen-44118125a/" class="fa fa-linkedin"> Linkedin</a>
+                    <a href="https://www.instagram.com/_harindu_r_/" class="fa fa-instagram"> Instagram</a>
+                </div>
+            </div>
+            <div class="part2">
+                <p>This page is created by <b><a href="editorsS1.html">@Harindu Raveen</a></b></p>
+            </div>
+        </footer>
+
+
+    </body>
+</html>
+

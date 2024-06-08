@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHealth</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="mobile-nav">
+            <i class="fas fa-bars mobile-menu-btn"></i>
+            <ul class="mobile-menu slide-out display-none">
+              <li>Home</li>
+              <li>Gallery</li>
+              <li>Shop</li>
+              <li>Q&A</li>
+              <li>About us</li>
+              <li>Feedback</li>
+              <li>Review</li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="nav">
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="images/logo.png" alt="logo-img">
+                    </a>
+                </div>
+                <div class="links">
+                    <a class="active" href="home.html" id="homec">Home</a>
+                    <a class="active" href="gallery.html">Gallery</a>
+                    <a class="active" href="shop.html">Shop</a>
+                    <a class="active" href="quizpage.html">Q&A</a>
+                    <a class="active" href="aboutus.html">About us</a>
+                    <a class="active" href="feedback.html">Feedback</a>
+                    <a class="active" href="Listing Page.html">Review</a>
+                </div>
+                <div class="navright">
+                    <div class="cart"> 
+                        <a href="shop.css" alt="gallery">
+                            <img src="images/cart.png" alt="cart">
+                        </a>  
+                    </div>
+                    <div class="signup-login">     
+                        <a href="login.html">LOG IN</a>
+                        <a class="getstart" href="signup.html">GET STARTED</a>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+    </header>       
+
+    <!-- LANDING PAGE -->
+    <div class="landing">
+        <div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Welcome to <br>MyHealth </h1>
+            <h2 id="heading2"> Balance your <span class="typing"></span></h2>
+            <h3> For a brighter future, we embrace our differences and work <br>hand in hand to achieve common goals.</h3>
+            <div class="btn">
+                <a href="aboutus.html">About us</a>
+            </div>
+        </div>
+        <div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
+            <img src="images/d1.png" alt="background-image">
+        </div>
+    </div>
+
+    <!-- COUNTER UP SECTION -->
+    <!-- REFERENCE : https://www.youtube.com/watch?app=desktop&v=BwauZwqufG4 -->
+    <div class="counterup-container">
+        <section class="counterup">
+            <div class="container" data-aos="fade-down" data-aos-duration="2000">
+                <div class="box">
+                    <div id="user">0<span>+</span></div>
+                    <h2>Customers</h2>
+                    <p>We value each person who chooses our products or services. We listen to their needs and work hard to make them happy. Building trust and giving great experiences is what we're all about. We want every customer to feel important and satisfied with us.</p>
+                </div>
+                <div class="box">
+                    <div id="subsc">0<span>+</span></div>
+                    <h2>Orders</h2>
+                    <p>Each time someone buys from us, we're grateful for their trust. We work hard to make sure every order is right and gets to our customers quickly. Our team is here to make sure everything goes smoothly, from packing to delivery. We want every customer to be happy with their order.</p>
+                </div>
+                <div class="box">
+                    <div id="contact">0<span>+</span></div>
+                    <h2>Contact</h2>
+                    <p>Whether it's by phone, email, or in person, we're here to help. Our friendly team is ready to answer any questions and provide support whenever needed. We value clear communication and aim to make every interaction easy and pleasant.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ABOUT SECTION -->
+
+    <div class="about">
+        <div class="aboutText" data-aos="fade-up" data-aos-duration="1000"> 
+            <img src="images/h2.png" alt="">
+        </div>
+        <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
+            <h1>Why is our website important that <br></h1>
+            <ol>
+                <li> 
+                    <span>01.</span>
+                     <p>Users can find lots of health info on our site. They learn about symptoms, conditions, treatments, and staying healthy. This helps them make smart health choices.</p>
+                </li>
+                <li> 
+                    <span>02.</span>
+                     <p>Our AI feature lets users enter health info and symptoms, getting instant feedback on their condition's severity. This saves time and gives valuable insights into their health.</p>
+                </li>
+                <li> 
+                    <span>03.</span>
+                     <p>Our website analyzes user data to predict future health risks. This helps users take proactive steps to stay healthy and avoid problems.</p>
+                </li>
+                <li> 
+                    <span>04.</span>
+                     <p>Users can easily find local doctors' schedules and book appointments. They can also buy medical tools on the site to help manage their health.</p>
+                </li>
+                <li> 
+                    <span>05.</span>
+                     <p>A good-looking website makes it easy for users to find what they need. Simple navigation helps users explore the site and manage their health better.</p>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+        
+    <!--feature box-->
+
+    <section id="features">
+        <div class="fraturebox">
+            <div class="features__top" data-aos="fade-down" data-aos-duration="1000">
+                <h1>Great Features</h1>
+                <p>We have awesome amazing features that would blow your mind</p>
+            </div>
+
+            <div class="features__container" data-aos="fade-up" data-aos-duration="1000">
+                <a href="home.html" alt="home">
+                    <div class="feature__item">
+                        <span class="material-icons">
+                            <img src="images/feature1.png" alt="feature-img1">
+                        </span>
+                        
+                        <div class="feautureitem__info">
+                            <h4>Powerful Dashboard</h4>
+                            <p> simplifying and giving your quick access to everything you need on our platform.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#.html" alt="home">
+                    <div class="feature__item">
+                        <span class="material-icons">
+                            <img src="images/feature2.png" alt="feature-img1">
+                        </span>
+                        
+                        <div class="feautureitem__info">
+                            <h4>AI Technology</h4>
+                            <p>We utilize AI to identify health issues and provide personalized instructions.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="shop.html" alt="home">
+                    <div class="feature__item">
+                        <span class="material-icons">
+                            <img src="images/feature3.png" alt="feature-img1">
+                        </span>
+                        
+                        <div class="feautureitem__info">
+                            <h4>Buy equipments</h4>
+                            <p>We have our products and equipments what user can buy for the healthy.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="quizpage.html" alt="home">
+                    <div class="feature__item">
+                        <span class="material-icons">
+                            <img src="images/feature4.png" alt="feature-img1">
+                        </span>
+                        
+                        <div class="feautureitem__info">
+                            <h4>Quiz and Discounts</h4>
+                            <p>User can correctly answers for the quiz and get discounts and rewards.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="Listing Page.html" alt="home">
+                    <div class="feature__item">
+                        <span class="material-icons">
+                            <img src="images/feature5.png" alt="feature-img1">
+                        </span>
+                        
+                        <div class="feautureitem__info">
+                            <h4>Feedback and Review</h4>
+                            <p>User can give review for our products and feedback for our services.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#.html" alt="home">
+                    <div class="feature__item">
+                        <span class="material-icons">
+                            <img src="images/feature6.png" alt="feature-img1">
+                        </span>
+                        
+                        <div class="feautureitem__info">
+                            <h4>Support 24/7</h4>
+                            <p>User can get help and instruction in our website 24/7 hours.</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+            <!-- Contact us -->
+
+        <section class="contact" data-aos="fade-up" data-aos-duration="1000">
+            <a href="feedback.html">
+                <div class="contact-us">
+                    <img src="images/contact.png" alt="contact"><span>Contact Us.</span>
+                </div>
+            </a>
+        </section>
+    </section>
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="background-image"></div>
+        <div id="background-image"></div>
+        <div class="footer">
+            <div class="part1">
+                <div class="logo">
+                    <a href="home.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="terms">
+                    <p>No 10,<br>Temple road,Bambalapitiya,<br>Colombo 4</p>
+                    <p>071 6395951</p>
+                </div>
+            </div>
+            <div class="part1">
+                <h2>Solutions</h2>
+                <a href="https://www.google.com">AI bot</a>
+                <a href="shop.html">Medical equipments</a>
+                <a href="home.html">Advising</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+            <div class="part1">
+                <h2>Pages</h2>
+                <a  href="home.html" id="homec">Home</a>
+                <a  href="gallery.html">Gallery</a>
+                <a  href="shop.html">Shop</a>
+                <a  href="quizpage.html">Q&A</a>             
+            </div>
+            <div class="part1">
+                <h2>Socials</h2>
+                <a href="https://www.facebook.com/harindu.raveen" class="fa fa-facebook"> Facebook</a>
+                <a href="#" class="fa fa-twitter"> Twitter</a>
+                <a href="https://www.linkedin.com/in/harindu-raveen-44118125a/" class="fa fa-linkedin"> Linkedin</a>
+                <a href="https://www.instagram.com/_harindu_r_/" class="fa fa-instagram"> Instagram</a>
+            </div>
+        </div>
+        <div class="part2">
+            <p>This page is created by <b><a href="editorsS1.html">@Harindu Raveen</a></b></p>
+        </div>
+    </footer>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./javascript/home.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
