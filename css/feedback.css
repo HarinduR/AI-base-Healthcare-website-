@@ -1,0 +1,549 @@
+
+html,body {
+   background-color: #fff;
+   font-family: 'Source Sans Pro',sans-serif;
+   overflow-x:hidden !important;
+   margin: 0px !important;
+   padding: 0px !important;
+}
+
+ * {
+   text-decoration: none !important;
+   margin: 0;
+   padding: 0;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo img {
+   height: 60px;
+   margin-right: 0px;
+   margin-top: 5px;
+   display: flex;
+   align-items: center;
+}
+
+.nav{
+   position:fixed;
+   z-index: 1001;
+   top: 0;
+   right: 0;
+   left:0;
+   height: 80px;
+   display: flex;
+   flex-direction:row;
+   justify-content:space-between;
+   align-items: center;
+   padding: 0 15px 10px;
+   background-color: rgba(255, 255, 255, 0.498) ;
+   box-shadow: 0 40px 150px rgba(80, 216, 143, 0.595);
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+.nav .links a {
+   margin-right: 25px;
+   font-size: 20px;
+   font-weight: 600;
+   color: #000;
+   padding: 0% 5px;
+   text-decoration: none; /* Remove default underline */
+   position: relative; /* Add relative positioning for pseudo-element */
+}
+
+#homec {
+   color: #4F98CA; /* everyone must change that one */
+}
+
+.nav .links a::after {
+   content: '';
+   background: #4F98CA;
+   width: 0;
+   height: 2px;
+   position: absolute;
+   bottom: -20px;
+   left: 0;
+   transition: width 0.5s;
+}
+
+.nav .links a:hover::after, /* Increase width on hover */
+.nav .links a.mainlink::after { /* For the active link */
+   width: 100%;
+}
+
+.navright {
+   display: flex;
+   align-items: center; 
+}
+
+.cart {
+   display: inline-block; 
+   margin-right: 20px;
+   border-radius: 50%;
+   padding: 10px 10px;
+   transition: transform 0.5s; /* Add transition for smooth animation */
+}
+
+.cart:hover {
+   transform: scale(1.3); /* Scale up the cart icon on hover */
+}
+
+.cart a img {
+   height: 30px; 
+   width: auto; 
+   vertical-align: middle; 
+}
+
+
+.signup-login a {
+   text-decoration: none;
+   color: hsl(0, 0%, 0%);
+   font-weight: bold ;
+   padding: 10px 10px;
+   border: 2px solid #50D890;
+   border-radius: 100px;
+   transition: background-color 0.5s, color 0.5s; /* Add transition for background-color and color */
+}
+
+.signup-login .getstart {
+   color: hwb(0 0% 100%);
+   background-color: #50D890;
+   margin-left: 10px;
+}
+
+.signup-login a:hover {
+   background-color: #50D890;
+   color: hsl(0, 0%, 0%);
+}
+
+.signup-login .getstart:hover {
+   background-color: hsl(0, 0%, 100%);
+   color: hwb(0 0% 100%);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+   .nav {
+       height: auto;
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 15px 10px;
+   }
+
+   .nav .links {
+       flex-direction: column;
+       align-items: flex-start;
+       margin-top: 10px;
+   }
+
+   .nav .links a {
+       padding: 10px 0;
+   }
+
+   .navright {
+       margin-top: 10px;
+       margin-left: auto;
+   }
+
+   .cart {
+       margin-right: 0;
+   }
+}
+
+
+ section
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images2/6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0px 0px ;
+    background-position-y: -100px ;
+    background-size: cover;
+    background-repeat: no-repeat
+ }
+
+ .container
+ {
+   position: relative;
+   min-width: 900px;
+   min-height: 400px;
+   margin-top: 100px ;
+   display: flex;
+   z-index: 1000;
+   border: 10px white;
+   border-radius: 20px;
+   background-color: rgba(255, 255, 255, 0.81);
+   box-shadow:  0px 0px 20px 0px rgba(0, 0, 0, 0.601) ;
+  
+ }
+ .container .contactinfo
+ {
+   position: absolute;
+   top: 25px;
+   left:25px ;
+   width: 300px;
+   height: 470px;
+   background:rgb(77, 171, 180);
+   z-index: 1;
+   padding: 40px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   justify-content: space-between;
+   box-shadow: 0 20px rgba(0, 0, 0, 0);
+   border: 10px #19e259;
+   border-radius: 20px;
+ }
+ .container .contactinfo h2
+ {
+   color: aliceblue;
+   font-size: 24px;
+   font-weight: 500;
+  
+ }
+
+ .container .contactinfo ul.info li
+ {
+   position: relative;
+   margin: 20px 0;
+ }
+
+ .container .contactinfo ul.info li
+ {
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 50px 0;
+  cursor: pointer;
+  align-items: flex-start; 
+ }
+ .container .contactinfo ul.info li span:nth-child(1)
+ {
+    width: 60px;
+    min-width: 60px;
+ }
+ .container .contactinfo ul.info li span:nth-child(1) img
+ {
+   max-width: 100%;
+   filter: invert(1);
+ }
+ .container .contactinfo ul.info li span:nth-child(2)
+ {
+   color: #ffffff;
+   margin-left: 20px ;
+   margin-top: auto;
+   font-weight: 300;
+ }
+ .contactform1 {
+   padding-left: 430px;
+   padding-top: 60px;
+ 
+ }
+
+ .container .contactform1 h2
+ {
+   color: #0f3959;
+   font-size: 24px;
+   font-weight: 500;
+   margin-bottom: 20px;
+   opacity: 0.7;
+ }
+ .popup {
+   width: 400px;
+   background: #ffffff;
+   border-radius: 6px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   padding: 30px;
+   color: #333;
+   display: none; /* Initially hide the popup */
+   z-index: 1000; /* Ensure popup is above other elements */
+}
+
+.container .contactform1 .formbox .inputbox textarea {
+   background-color: rgba(255, 255, 255, 0.5);
+   opacity: 0.7;
+   /* Adjust the alpha value as needed */
+   /* Other CSS properties */
+}
+
+.container .contactform1 .formbox .inputbox input[type="text"],
+.container .contactform1 .formbox .inputbox input[type="email"] {
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.7;
+}
+
+.container .contactform1 .formbox .inputbox select {
+   background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value as needed */
+   border-radius: 10px; /* Adjust the border radius as needed */
+   border: none; /* Remove default border */
+   padding: 5px; /* Adjust padding as needed */
+   font-size: 14px; /* Adjust font size as needed */
+   /* Other CSS properties */
+}
+
+
+
+.popup img {
+   width: 100px;
+   margin-top: -50px;
+   border-radius: 50%;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h4 {
+   font-size: 24px;
+   font-weight: 500;
+   margin: 20px 0 10px;
+}
+
+.popup button {
+   margin-top: 20px;
+   padding: 10px 20px;
+   background: #6fd649;
+   color: #ffffff;
+   border: 0;
+   outline: none;
+   font-size: 18px;
+   border-radius: 4px;
+   cursor: pointer;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+ .container .contactform1 .formbox .inputbox
+ {
+   position: relative;
+   margin-bottom: 20px;
+
+ }
+ .container .contactform1 .formbox .inputbox.w1
+ {
+   width: 47%;
+ }
+ .container .contactform1 .formbox .inputbox.w2
+ {
+   width: 100%;
+ }
+ .container .contactform1 .formbox .inputbox input
+ {
+   width: 400px;
+   resize: none;
+   padding: 5px 0;
+   font-size: 18px;
+   font-weight: 300;
+   color: #333;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #777;
+ }
+ .container .contactform1 .formbox .inputbox textarea
+ {
+   width: 400px;
+   resize: none;
+   padding: 5px 0;
+   font-size: 18px;
+   font-weight: 300;
+   color: #333;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #777;
+ }
+ .container .contactform1 .formbox .inputbox textarea
+ {
+   height: 120px;
+ }
+ .container .contactform1 .formbox .inputbox span
+ {
+   position: absolute;
+   left: 0;
+   padding: 5px 0px;
+   pointer-events: none;
+   font-size: 18px;
+   font-weight: 300;
+   transition: 0.2s;
+ }
+ .container .contactform1 .formbox .inputbox input:focus ~ span,
+ .container .contactform1 .formbox .inputbox input:valid ~ span,
+ .container .contactform1 .formbox .inputbox textarea:focus ~ span
+
+{
+     transform: translateY(-20px);
+     font-size: 15px;
+     font-weight: 400;
+     letter-spacing: 1px;
+     color: rgb(77, 171, 180);
+    
+ }
+ 
+ 
+
+
+ .container .contactform1 .formbox .inputbox input[type="submit"]
+
+ {
+   position: relative;
+   cursor: pointer;
+   background: rgb(77, 171, 180);
+   color: #ffffff;
+   border: rgb(77, 171, 180);
+   border-radius: 10px;
+   max-width: 150px;
+   padding: 12px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  margin-left: 200px;
+
+   
+ }
+ .inputbox input[type="submit"]:hover, .inputbox input[type="submit"]:focus, .inputbox input[type="submit"]:active
+ {
+   box-shadow: 0 0 20px rgb(77, 171, 180);
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ 
+ .container .contactform1 .formbox .inputbox input[type="reset"]
+
+ {
+   position: relative;
+   cursor: pointer;
+   background: rgb(77, 171, 180);
+   color: #ffffff;
+   border: rgb(77, 171, 180);
+   border-radius: 10px;
+   max-width: 150px;
+   padding: 12px;
+   -webkit-transition-duration: 0.3s;
+   transition-duration: 0.3;
+   -webkit-transition-property: box-shadow, transform;
+   transition-property: box-shadow, transform;
+   margin-left: 200px;
+ }
+ .inputbox input[type="reset"]:hover, .inputbox input[type="reset"]:focus, .inputbox input[type="reset"]:active
+ {
+   box-shadow: 0 0 20px rgb(77, 171, 180);
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+
+ 
+ /* FOOTER CSS */
+
+.footer{
+   width: 100%;
+   padding: 50px 0px;
+   background:rgb(255, 255, 255) ;
+}
+
+.footer{
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 1500px;
+   margin: auto;
+   margin-top: 100px;
+   box-shadow: 0px 30px 40px 20px rgba(0,0,0,0.10);
+}
+
+.part1{
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+}
+
+.part1 .logo img{
+   width: 250px;
+   height: 60px;
+}
+
+.part1 .terms{
+   max-width: 450px;
+   margin-top: 10px;
+   font-weight: 800;
+   color: #939393;
+   font-size: 20px;
+}
+
+.part1 h2{
+   margin-bottom: 30px;
+   color: #000000;
+   font-weight: 700;
+}
+
+.part1 a{
+   margin-top: 10px;
+   color: hsl(0, 0%, 33%);
+   font-weight: 600;
+}
+
+.part1 a:hover{
+   color: #55ACEE;
+   opacity: 0.8;
+}
+
+.part1 a .fa {
+   padding: 20px;
+   font-size: 32px;
+   width: 50px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 2px;
+}
+
+.part1 .fa-facebook {
+   background: hsl(0, 0%, 100%);
+   color: #4453dd;
+ }
+
+.part1 .fa-twitter {
+   background: hsl(0, 0%, 100%);
+   color: #55ACEE;
+}
+
+.part1 .fa-linkedin {
+   background: #ffffff;
+   color: #007bb5;
+}
+
+.part1 .fa-instagram {
+   background: hsl(0, 0%, 100%);
+   color: rgb(222, 48, 48);
+}  
+
+.part1 a .fa:hover {
+     opacity: 0.7;
+} 
+
+.part2{
+   max-width: 1500px;
+   margin: auto;
+   text-align: center;
+   padding: 0px 40px;
+}
+
+.part2 p{
+   margin-top: 20px;
+   color: #7a7a7a;
+}
+
+.part2 hr{
+   border: none;
+   height: 1px;
+   background-color: #7a7a7a;
+}

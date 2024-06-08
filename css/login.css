@@ -1,0 +1,400 @@
+html,body {
+    background-color: #fff;
+    font-family: 'Source Sans Pro',sans-serif;
+    overflow-x:hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+body {
+    background-image: url('../images/homewallpaper2.jpg'); /* Replace 'your-background-image.jpg' with your image file path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0px 0px ;
+    background-position-y: -50px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+* {
+    text-decoration: none !important;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 0px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    position:fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left:0;
+    height: 80px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 15px 10px;
+    background-color: #ffffff ;
+    box-shadow: 0 40px 150px rgba(80, 216, 143, 0.595);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav .links a {
+    margin-right: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    padding: 0% 5px;
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Add relative positioning for pseudo-element */
+}
+
+#homec {
+    color: #4F98CA; /* everyone must change that one */
+}
+
+.nav .links a::after {
+    content: '';
+    background: #4F98CA;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav .links a:hover::after, /* Increase width on hover */
+.nav .links a.mainlink::after { /* For the active link */
+    width: 100%;
+}
+
+.navright {
+    display: flex;
+    align-items: center; 
+}
+
+.cart {
+    display: inline-block; 
+    margin-right: 20px;
+    background-color: #ffffff; 
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+
+.cart a img {
+    height: 30px; 
+    width: auto; 
+    vertical-align: middle; 
+}
+
+.signup-login a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold ;
+    padding: 10px 10px;
+    border: 2px solid #50D890;
+    border-radius: 100px;
+    transition: background-color 0.5s, color 0.5s; /* Add transition for background-color and color */
+}
+
+.signup-login .getstart {
+    color: hwb(0 0% 100%);
+    background-color: #50D890;
+    margin-left: 10px;
+}
+
+.signup-login a:hover {
+    background-color: #50D890;
+    color: hsl(0, 0%, 0%);
+}
+
+.signup-login .getstart:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hwb(0 0% 100%);
+}
+
+
+.formbox {
+    position: relative;
+    max-width: 1000px;
+    height: 700px;
+    margin: 10% auto; /* Centering the form vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    background-image: url('../images/S1\ \(2\).jpg');
+    background-position: 0px 0px ;
+    background-position-y: 0px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Styling for the inner container of the form */
+.inner-formbox {
+    display: flex; /* Using flexbox to manage the layout */
+    width: 95%; /* Setting the width of the container */
+    height: 95%;
+    background-color: rgba(255, 255, 255, 0.155);
+    border-radius: 40px;
+}
+
+/* Styling for the image section */
+.image-section {
+    width: 50%; /* Making the image section take up 40% of the inner container width */
+    padding: 15px; /* Adding padding for spacing */
+}
+
+/* Styling for the image inside the image section */
+.image-section img {
+    width: 100%; /* Making the image take up the full width of its container */
+    border-radius: 20px; /* Adjusted border-radius */
+    margin-top: 120px;
+}
+
+/* Styling for the form section */
+.form-section{
+    width: 60%; /* Making the form section take up 60% of the inner container width */
+    padding: 0 20px; /* Adding padding to the form section for spacing */
+    margin-top: 0px;
+    background-color: rgba(255, 255, 255, 0.37); /* Setting background color */
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.117); /* Adding box shadow for depth */
+    border-radius: 40px;
+}
+
+.form-section h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800px;
+}
+
+.form-section .tab{
+    padding: auto;
+    margin-top: 50px;
+}
+
+.form-section input[type="email"],
+.form-section input[type="password"]{
+    width: 95%; /* Making input fields take full width */
+    padding: 10px; /* Adding padding inside input fields */
+    margin-bottom: 30px; /* Adding margin at the bottom for spacing between fields */
+    border: 1px solid #ccc; /* Adding border */
+    border-radius: 10px; /* Adding rounded corners */
+    font-size: 18px; /* Setting font size */
+    font-family: Raleway;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.469);
+}
+
+.form-section label {
+    font-size:20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.form-section p {
+    font-size:15px;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: -20px;
+}
+
+.form-section h4 a{
+    color: #000;
+}
+
+.form-section #p2 {
+    font-size:15px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: -10px;
+}
+
+.form-section #p2 a{
+    color: #ff00009f;
+}
+
+.form-section h4 {
+    font-size:15px;
+    font-weight: bold;
+    margin-left: 350px;
+    margin-top: -30px;
+}
+
+.form-section hr{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.277);
+}
+
+.btn {
+    width: 50%; /* Set width of buttons */
+    padding: 10px 20px; /* Add padding inside buttons */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Add rounded corners */
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 230px; /* Add margin between buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 22px; /* Set font size */
+    font-weight: 550;
+    background-color: rgba(76, 175, 80, 0.5); /* Set transparent background color */
+    color: #000000; /* Set text color */
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition for background color change */
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.277)
+}    
+
+.btn:hover {
+    background-color: rgba(69, 160, 73, 0.651); /* Darken transparent background color on hover */
+    transform: scale(1.03);
+    transition: transform 0.5s;
+}
+
+.form-section .social {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+    padding: 50px;
+    margin: -10px 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-section .social .fa {
+    font-size: 24px; /* Increase the size of the icons */
+    color: black; /* Change the color to black */
+    transition: transform 0.3s;
+}
+
+.form-section .social .fa:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
+
+/* FOOTER CSS */
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url('../images/test88.jpg');
+    background-position: 0px 0px ;
+    background-position-y: -650px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0px 30px 40px 20px rgba(0,0,0,0.10);
+}
+
+.part1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.part1 .logo img{
+    width: 250px;
+    height: 60px;
+}
+
+.part1 .terms{
+    max-width: 450px;
+    margin-top: 10px;
+    font-weight: 800;
+    color: #939393;
+    font-size: 20px;
+}
+
+.part1 h2{
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.part1 a{
+    margin-top: 10px;
+    color: hsl(0, 0%, 33%);
+    font-weight: 600;
+}
+
+.part1 a:hover{
+    color: #55ACEE;
+    opacity: 0.8;
+}
+
+.part1 a .fa {
+    padding: 20px;
+    font-size: 32px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.part1 .fa-facebook {
+    background: hsl(0, 0%, 100%);
+    color: #4453dd;
+  }
+ 
+.part1 .fa-twitter {
+    background: hsl(0, 0%, 100%);
+    color: #55ACEE;
+}
+
+.part1 .fa-linkedin {
+    background: #ffffff;
+    color: #007bb5;
+}
+
+.part1 .fa-instagram {
+    background: hsl(0, 0%, 100%);
+    color: rgb(222, 48, 48);
+}  
+
+.part1 a .fa:hover {
+      opacity: 0.7;
+} 
+
+.part2{
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.part2 p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.part2 hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+

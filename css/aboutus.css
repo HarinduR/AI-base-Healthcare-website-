@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+html,body {
+    background-color: #fff;
+    font-family: 'Source Sans Pro',sans-serif;
+    overflow-x:hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+* {
+    text-decoration: none !important;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 0px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    position:fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left:0;
+    height: 80px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 15px 10px;
+    background-color: rgba(255, 255, 255, 0.589) ;
+    box-shadow: 0 40px 150px rgba(80, 216, 143, 0.595);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav .links a {
+    margin-right: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    padding: 0% 5px;
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Add relative positioning for pseudo-element */
+}
+
+#homec {
+    color: #4F98CA; /* everyone must change that one */
+}
+
+.nav .links a::after {
+    content: '';
+    background: #4F98CA;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav .links a:hover::after, /* Increase width on hover */
+.nav .links a.mainlink::after { /* For the active link */
+    width: 100%;
+}
+
+.navright {
+    display: flex;
+    align-items: center; 
+}
+#increaseFontBtn,
+#decreaseFontBtn {
+    background-color: #50D890; /* Blue background color */
+    color: #000000; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-right: 10px; /* Add some space between buttons */
+    font-weight: bold;
+}
+
+#increaseFontBtn:hover,
+#decreaseFontBtn:hover {
+    background-color: #50D890; /* Darker blue background color on hover */
+}
+
+
+.cart {
+    display: inline-block; 
+    margin-right: 20px;
+    border-radius: 50%;
+    padding: 10px 10px;
+    transition: transform 0.5s; /* Add transition for smooth animation */
+}
+
+.cart:hover {
+    transform: scale(1.3); /* Scale up the cart icon on hover */
+}
+
+.cart a img {
+    height: 30px; 
+    width: auto; 
+    vertical-align: middle; 
+}
+
+
+.signup-login a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold ;
+    padding: 10px 10px;
+    border: 2px solid #50D890;
+    border-radius: 100px;
+    transition: background-color 0.5s, color 0.5s; /* Add transition for background-color and color */
+}
+
+.signup-login .getstart {
+    color: hwb(0 0% 100%);
+    background-color: #50D890;
+    margin-left: 10px;
+}
+
+.signup-login a:hover {
+    background-color: #50D890;
+    color: hsl(0, 0%, 0%);
+}
+
+.signup-login .getstart:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hwb(0 0% 100%);
+}
+
+
+.landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 220px;
+    height: 900px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)), url('../images/au\ \(1\).jpg');
+    background-size:cover;
+    background-position: relative;
+    background-position-y: 00px;
+}
+
+.landingText h1{
+    font-size: 80px;
+    margin: 0 !important;
+    text-align: center;
+}
+
+.landingText h2{
+    font-size: 60px;
+    margin: 0 !important;
+    text-align: center;
+    color: #50D890;
+}
+
+.landingText h3{
+    font-size: 17px;
+    margin: 0 !important;
+    text-align: center;
+    color: #939393;
+}
+
+
+.landingText .btn{
+    width: 120px;
+    margin-top: 30px;
+    margin-left: 35%;
+    padding: 10px 20px 14px 20px;
+    border: 2px solid #50D890;
+    background-color: #50D890;
+    border-radius: 45px;
+    text-align: center;
+
+    box-shadow: 0 5px 10px;
+}
+
+.landingText .btn a{
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.landingText .btn:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hwb(0 0% 100%);
+}
+
+
+
+
+
+.wrapper .card_Container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px;
+    margin-left: 320px;
+    margin-bottom: 250px;
+}
+
+.card_Container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 0 1000px rgba(11, 11, 13, 0.6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .imbBx, .imbBx img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .content{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(202, 14, 14, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+}
+
+.card:hover .content{
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.content .contentBx h3{
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.card:hover .content .contentBx h3{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content .contentBx h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.content .sci{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.content .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+.card:hover .content .sci li{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content .sci li a{
+    color: #fff;
+    font-size: 24px;
+}
+
+/* FOOTER CSS */
+
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url('../images/test9.jpg');
+    background-position: 0px 0px ;
+    background-position-y: -650px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0px 30px 40px 20px rgba(0,0,0,0.10);
+}
+
+.part1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.part1 .logo img{
+    width: 250px;
+    height: 60px;
+}
+
+.part1 .terms{
+    max-width: 450px;
+    margin-top: 10px;
+    font-weight: 800;
+    color: #939393;
+    font-size: 20px;
+}
+
+.part1 h2{
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.part1 a{
+    margin-top: 10px;
+    color: hsl(0, 0%, 33%);
+    font-weight: 600;
+}
+
+.part1 a:hover{
+    color: #55ACEE;
+    opacity: 0.8;
+}
+
+.part1 a .fa {
+    padding: 20px;
+    font-size: 32px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.part1 .fa-facebook {
+    background: hsl(0, 0%, 100%);
+    color: #4453dd;
+  }
+ 
+.part1 .fa-twitter {
+    background: hsl(0, 0%, 100%);
+    color: #55ACEE;
+}
+
+.part1 .fa-linkedin {
+    background: #ffffff;
+    color: #007bb5;
+}
+
+.part1 .fa-instagram {
+    background: hsl(0, 0%, 100%);
+    color: rgb(222, 48, 48);
+}  
+
+.part1 a .fa:hover {
+      opacity: 0.7;
+} 
+
+.part2{
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.part2 p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.part2 hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+

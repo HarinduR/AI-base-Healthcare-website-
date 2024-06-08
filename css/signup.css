@@ -1,0 +1,381 @@
+html,body {
+    background-color: #fff;
+    font-family: 'Source Sans Pro',sans-serif;
+    overflow-x: hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+body {
+    background-image: url('../images/homewallpaper2.jpg'); /* Replace 'your-background-image.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This ensures that the background image remains fixed while scrolling */
+    background-position: 0px 0px;
+    background-position-y: -50px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+* {
+    text-decoration: none !important;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 0px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    position:fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left:0;
+    height: 80px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 15px 10px;
+    background-color: #ffffff ;
+    box-shadow: 0 40px 150px rgba(80, 216, 143, 0.595);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav .links a{
+    margin-right: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    padding: 0% 5px;
+}
+
+.nav .links a:hover {
+    color: #4F98CA;
+    border: 2px solid #4F98CA;
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+
+.navright {
+    display: flex;
+    align-items: center; 
+}
+
+.cart {
+    display: inline-block; 
+    margin-right: 20px;
+    background-color: #ffffff; 
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+
+.cart a img {
+    height: 30px; 
+    width: auto; 
+    vertical-align: middle; 
+}
+
+.signup-login a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold ;
+    padding: 10px 10px;
+    border: 2px solid #50D890;
+    border-radius: 100px;
+}
+
+.signup-login .getstart {
+    color: hwb(0 0% 100%);
+    background-color: #50D890;
+    margin-left: 10px;
+}
+
+.signup-login a:hover {
+    background-color: #50D890;
+    color: hsl(0, 0%, 0%);
+}
+
+.signup-login .getstart:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hwb(0 0% 100%);
+}
+
+
+/* Overall layout styling */
+.formbox {
+    position: relative;
+    max-width: 1000px;
+    height: 900px;
+    margin: 10% auto; /* Centering the form vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    background-image: url('../images/S1\ \(2\).jpg');
+    background-position: 0px 0px ;
+    background-position-y: 0px ;
+    background-position-x: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Styling for the inner container of the form */
+.inner-formbox {
+    display: flex; /* Using flexbox to manage the layout */
+    width: 95%; /* Setting the width of the container */
+    height: 95%;
+    background-color: rgba(255, 255, 255, 0.155);
+    border-radius: 40px;
+}
+
+/* Styling for the image section */
+.image-section {
+    width: 50%; /* Making the image section take up 40% of the inner container width */
+    padding: 20px; /* Adding padding for spacing */
+}
+
+/* Styling for the image inside the image section */
+.image-section img {
+    width: 100%; /* Making the image take up the full width of its container */
+    border-radius: 20px; /* Adjusted border-radius */
+    margin-top: 70px;
+}
+
+/* Styling for the form section */
+.form-section{
+    width: 60%; /* Making the form section take up 60% of the inner container width */
+    padding: 0 20px; /* Adding padding to the form section for spacing */
+    margin-top: 0px;
+    background-color: rgba(255, 255, 255, 0.37); /* Setting background color */
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.117); /* Adding box shadow for depth */
+    border-radius: 40px;
+}
+
+.form-section h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800px;
+}
+
+/* Form inputs */
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="number"],
+.form-section input[type="tel"],
+.form-section input[type="password"],
+.form-section input[type="submit"],
+.form-section input[type="educational_preference"] {
+    width: 95%; /* Making input fields take full width */
+    padding: 10px; /* Adding padding inside input fields */
+    margin-bottom: 30px; /* Adding margin at the bottom for spacing between fields */
+    border: 1px solid #ccc; /* Adding border */
+    border-radius: 10px; /* Adding rounded corners */
+    font-size: 18px; /* Setting font size */
+    font-family: Raleway;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.277);
+}
+
+.form-section select {
+    width: 95%; /* Making input fields take full width */
+    padding: 10px; /* Adding padding inside input fields */
+    margin-bottom: 30px; /* Adding margin at the bottom for spacing between fields */
+    border: 1px solid #ccc; /* Adding border */
+    border-radius: 10px; /* Adding rounded corners */
+    font-size: 18px; /* Setting font size */
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.277);
+}
+
+.form-section p {
+    font-size:15px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.form-section p a{
+    color: #ff00009f;
+}
+
+/* Gender radio buttons */
+.form-section label {
+    font-size:20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form-section .gender-inline {
+    font-size:20px;
+    font-weight: bold;
+    display: inline-block; /* Displaying radio buttons in line */
+    margin-right: 10px; /* Adding margin between radio buttons for spacing */
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.form-section .tab {
+    display: none;
+}
+
+/* Button styles */
+.btn {
+    width: 50%; /* Set width of buttons */
+    padding: 10px 20px; /* Add padding inside buttons */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Add rounded corners */
+    margin-bottom: 15px;
+    margin-left: 210px; /* Add margin between buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 22px; /* Set font size */
+    font-weight: 550;
+    background-color: rgba(76, 175, 80, 0.5); /* Set transparent background color */
+    color: #000000; /* Set text color */
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition for background color change */
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.277);
+}    
+
+.btn:hover {
+    background-color: rgba(69, 160, 73, 0.651); /* Darken transparent background color on hover */
+    transform: scale(1.03);
+    transition: transform 0.5s;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0px 5px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+/* FOOTER CSS */
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-size: cover;
+}
+
+.footer{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0px 30px 40px 20px rgba(0,0,0,0.10);
+}
+
+.part1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.part1 .logo img{
+    width: 250px;
+    height: 60px;
+}
+
+.part1 .terms{
+    max-width: 450px;
+    margin-top: 10px;
+    font-weight: 800;
+    color: #939393;
+    font-size: 20px;
+}
+
+.part1 h2{
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.part1 a{
+    margin-top: 10px;
+    color: hsl(0, 0%, 33%);
+    font-weight: 600;
+}
+
+.part1 a:hover{
+    color: #55ACEE;
+    opacity: 0.8;
+}
+
+.part1 a .fa {
+    padding: 20px;
+    font-size: 32px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.part1 .fa-facebook {
+    background: hsl(0, 0%, 100%);
+    color: #4453dd;
+  }
+ 
+.part1 .fa-twitter {
+    background: hsl(0, 0%, 100%);
+    color: #55ACEE;
+}
+
+.part1 .fa-linkedin {
+    background: #ffffff;
+    color: #007bb5;
+}
+
+.part1 .fa-instagram {
+    background: hsl(0, 0%, 100%);
+    color: rgb(222, 48, 48);
+}  
+
+.part1 a .fa:hover {
+      opacity: 0.7;
+} 
+
+.part2{
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.part2 p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.part2 hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+

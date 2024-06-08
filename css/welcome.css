@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/test88.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    font-family: sans-serif;
+}
+
+.welcome-page {
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.welcome-page h1 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.welcome-page h2 {
+    font-size: 30px;
+    color: rgb(79, 79, 79);
+}
+
+.welcome-page h1,
+.welcome-page h2 {
+    margin-bottom: 20px;
+}
+
+.creators {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: 20px 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+    border-radius: 20px;
+    box-shadow: 0 0 80px rgba(80, 216, 143, 0.585);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card p {
+    margin-top: 10px;
+    font-weight: bold;
+}

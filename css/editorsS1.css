@@ -1,0 +1,229 @@
+html,body {
+    font-family: 'Source Sans Pro',sans-serif;
+    overflow-x:hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+body {
+    background-image: url('../images/w1\ \(10\).jpg'); /* Replace 'your-background-image.jpg' with your image file path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0px 0px ;
+    background-position-y: -100px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+* {
+    text-decoration: none !important;
+}
+
+.headedit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    margin-bottom: -100px;
+}
+
+.headedit h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.icon-bar {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.568);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.icon-bar a:hover {
+    background-color: #4d81cf3d;
+}
+
+.icon-bar a i {
+    font-size: 20px;
+ /* Add transition for smooth animation */
+}
+
+.icon-bar a:hover {
+    transition: transform 0.5s;
+    left: 50px;
+    transform: translateX(20px); /* Adjust the distance for the pop-out effect */
+}
+
+
+.formbox {
+    position: relative;
+    max-width: 1200px;
+    height: 600px;
+    margin: 8% auto; /* Centering the form vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    background-image: url('../images/S1\ \(6\).jpg');
+    background-position: 0px 0px ;
+    background-position-y: 0px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Styling for the inner container of the form */
+.inner-formbox {
+    display: flex; /* Using flexbox to manage the layout */
+    width: 95%; /* Setting the width of the container */
+    height: 95%;
+    background-color: rgba(255, 255, 255, 0.155);
+    border-radius: 40px;
+}
+
+/* Styling for the image section */
+.image-section {
+    width: 40%; /* Making the image section take up 40% of the inner container width */
+    padding: 5px; /* Adding padding for spacing */
+    margin-right: -30px;
+}
+
+/* Styling for the image inside the image section */
+.image-section img {
+    width: 92%; /* Making the image take up the full width of its container */
+    border-radius: 20px; /* Adjusted border-radius */
+    margin-top: 10px;
+
+}
+
+/* Styling for the form section */
+.form-section{
+    width: 60%; /* Making the form section take up 60% of the inner container width */
+    padding: 10px 20px; /* Adding padding to the form section for spacing */
+    margin-top: 0px;
+    background-color: rgba(255, 255, 255, 0.37); /* Setting background color */
+    box-shadow: 0 0 80px rgba(198, 50, 50, 0.117); /* Adding box shadow for depth */
+    border-radius: 40px;
+}
+
+.form-section h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800px;
+}
+
+.form-section .social {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+    padding: 50px;
+    margin: 20px 150px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-section .social .fa {
+    font-size: 24px; /* Increase the size of the icons */
+    color: black; /* Change the color to black */
+    transition: transform 0.3s;
+}
+
+.form-section .social .fa:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
+
+
+
+section {
+    display: flex;
+    margin-left: 180px;
+}
+
+.personal-info1 {
+    flex: 1.5;
+    margin-right: 60px;
+    margin-left: -420px;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.personal-info2 {
+    flex: 1;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.personal-info1 div,
+.personal-info2 div {
+    margin-bottom: 10px;
+}
+
+.personal-info1 strong,
+.personal-info2 strong {
+    display: inline-block;
+    width: 100px;
+}
+
+.personal-info1 span,
+.personal-info2 span {
+    display: inline-block;
+    width: calc(100% - 100px);
+    font-weight: normal;
+}
+
+
+.task-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1 {
+    flex: 1.5;
+    margin-right: 50px;
+    margin-left: -420px;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.column2 {
+    margin-right: 50px;
+    margin-left: 180px;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list a{
+    color: black;
+}
+
+.task-list li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.task-list li::before {
+    content: '\2022';
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
+}
